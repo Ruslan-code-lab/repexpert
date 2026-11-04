@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="REPEXPERT — компьютерная диагностика, ремонт двигателей и трансмиссий, автоэлектрика и программирование. Астана, улица Куляш Байсеитовой, 71.">
+  <title>REPEXPERT — диагностика и ремонт автомобилей</title>
+  <style>
+    :root { --bg:#0b0d10; --panel:#14181e; --text:#f5f7fa; --muted:#aab2bd; --accent:#e54832; --line:#2a3038; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--text); background:var(--bg); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px,92%); margin:auto; }
+    header { border-bottom:1px solid var(--line); background:rgba(11,13,16,.94); }
+    .nav { min-height:78px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight:900; font-size:25px; letter-spacing:1.5px; }
+    .brand span { color:var(--accent); }
+    .navlinks { display:flex; gap:25px; color:var(--muted); font-size:14px; }
+    .hero { padding:86px 0 76px; background:radial-gradient(ellipse at 80% 20%,#351a17 0%,transparent 42%),linear-gradient(135deg,#11151a,#0b0d10 70%); }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:3px; font-weight:700; font-size:12px; }
+    h1 { font-size:clamp(38px,6vw,68px); line-height:1.08; max-width:780px; margin:16px 0 20px; letter-spacing:-1.5px; }
+    .hero p { color:var(--muted); font-size:18px; max-width:650px; margin:0 0 30px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 22px; border-radius:5px; font-weight:700; }
+    .primary { background:var(--accent); color:white; }
+    .secondary { border:1px solid #555d67; }
+    section { padding:70px 0; }
+    .section-head { margin-bottom:30px; }
+    h2 { font-size:clamp(28px,4vw,40px); margin:0 0 10px; line-height:1.2; }
+    .sub { color:var(--muted); margin:0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }
+    .service { background:var(--panel); border:1px solid var(--line); padding:23px; border-radius:8px; min-height:150px; }
+    .num { color:var(--accent); font-size:12px; font-weight:800; letter-spacing:1px; }
+    .service h3 { font-size:18px; line-height:1.35; margin:12px 0 0; }
+    .contact { background:#12161b; border-top:1px solid var(--line); }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
+    .contact-card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:26px; }
+    .contact-card h3 { margin:0 0 18px; font-size:21px; }
+    .detail { padding:13px 0; border-top:1px solid var(--line); }
+    .detail small { display:block; color:var(--muted); margin-bottom:3px; }
+    .detail strong { font-size:17px; }
+    footer { border-top:1px solid var(--line); padding:22px 0; color:var(--muted); font-size:13px; }
+    @media(max-width:760px) { .navlinks { display:none; } .hero { padding:62px 0; } .grid { grid-template-columns:1fr 1fr; } .contact-grid { grid-template-columns:1fr; } }
+    @media(max-width:480px) { .grid { grid-template-columns:1fr; } .service { min-height:unset; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">REP<span>EXPERT</span></a>
+      <nav class="navlinks" aria-label="Навигация">
+        <a href="#services">Услуги</a><a href="#about">О сервисе</a><a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn primary" href="tel:+77082208158">Позвонить</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Автосервис · Диагностика · Ремонт</div>
+        <h1>Точная диагностика.<br>Профессиональный ремонт.</h1>
+        <p>REPEXPERT — обслуживание и ремонт автомобилей: от компьютерной диагностики до сложного ремонта двигателя и трансмиссии.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/77082208158" target="_blank" rel="noopener">Написать в WhatsApp</a>
+          <a class="btn secondary" href="#services">Посмотреть услуги</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Наши направления</div>
+          <h2>Услуги REPEXPERT</h2>
+          <p class="sub">Диагностика, ремонт и техническое обслуживание автомобильных систем.</p>
+        </div>
+        <div class="grid">
+          <article class="service"><div class="num">01</div><h3>Компьютерная диагностика</h3></article>
+          <article class="service"><div class="num">02</div><h3>Диагностика ходовой части</h3></article>
+          <article class="service"><div class="num">03</div><h3>Диагностика АКПП</h3></article>
+          <article class="service"><div class="num">04</div><h3>Диагностика двигателя</h3></article>
+          <article class="service"><div class="num">05</div><h3>Ремонт двигателя любой сложности</h3></article>
+          <article class="service"><div class="num">06</div><h3>Ремонт АКПП любой сложности</h3></article>
+          <article class="service"><div class="num">07</div><h3>Ремонт вариатора (CVT) любой сложности</h3></article>
+          <article class="service"><div class="num">08</div><h3>Ремонт DSG любой сложности</h3></article>
+          <article class="service"><div class="num">09</div><h3>Ремонт робота любой сложности</h3></article>
+          <article class="service"><div class="num">10</div><h3>Установка дополнительных агрегатов</h3></article>
+          <article class="service"><div class="num">11</div><h3>Ремонт автомобильной электропроводки</h3></article>
+          <article class="service"><div class="num">12</div><h3>Ремонт электронных блоков управления (ЭБУ)</h3></article>
+          <article class="service"><div class="num">13</div><h3>Программирование автомобильных систем</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">REPEXPERT</div>
+          <h2>Комплексный подход к ремонту</h2>
+          <p class="sub">Проводим диагностику и ремонт основных систем автомобиля. Помогаем определить причину неисправности и подобрать необходимый объём работ.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacts">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Свяжитесь с нами</div>
+          <h2>Контакты и адрес</h2>
+          <p class="sub">Позвоните или напишите, чтобы уточнить услугу и договориться о визите.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>REPEXPERT</h3>
+            <div class="detail"><small>Телефон</small><strong><a href="tel:+77082208158">+7 708 220 81 58</a></strong></div>
+            <div class="detail"><small>WhatsApp</small><strong><a href="https://wa.me/77082208158" target="_blank" rel="noopener">+7 708 220 81 58</a></strong></div>
+            <div class="detail"><small>Адрес</small><strong>Казахстан, город Астана, улица Куляш Байсеитовой, 71</strong></div>
+          </div>
+          <div class="contact-card">
+            <h3>Записаться на обслуживание</h3>
+            <p class="sub" style="margin-bottom:20px">Опишите неисправность или укажите, какая диагностика вам нужна.</p>
+            <a class="btn primary" href="https://wa.me/77082208158?text=Здравствуйте%2C%20хочу%20записаться%20на%20диагностику%20или%20ремонт." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© REPEXPERT · Диагностика и ремонт автомобилей</div></footer>
+</body>
+</html>
